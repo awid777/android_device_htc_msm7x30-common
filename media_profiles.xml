@@ -108,8 +108,6 @@
 
     </CamcorderProfiles>
     
-<<<<<<< HEAD
-=======
     <CamcorderProfiles cameraId="1">
 
         <EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
@@ -144,7 +142,6 @@
 
     </CamcorderProfiles>
 
->>>>>>> 6a08c89... msm7x30: Camera HAL for HTC Sense devices (1/2)
     <EncoderOutputFileFormat name="3gp" />
     <EncoderOutputFileFormat name="mp4" />
 

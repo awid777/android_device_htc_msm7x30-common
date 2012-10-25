@@ -77,15 +77,11 @@ PRODUCT_PACKAGES += \
     libQcomUI \
     libtilerenderer
 
-<<<<<<< HEAD
-# Media
-=======
 # Camera
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     camera.msm7x30
 
 # QCOM OMX
->>>>>>> 6a08c89... msm7x30: Camera HAL for HTC Sense devices (1/2)
 PRODUCT_PACKAGES += \
     libOmxCore \
     libOmxVenc \
