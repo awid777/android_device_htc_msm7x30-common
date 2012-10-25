@@ -19,7 +19,11 @@
 
 #include <binder/IMemory.h>
 #include <utils/RefBase.h>
+<<<<<<< HEAD
 #include <surfaceflinger/ISurface.h>
+=======
+#include <gui/ISurface.h>
+>>>>>>> 6a08c89... msm7x30: Camera HAL for HTC Sense devices (1/2)
 #include <ui/OverlayHtc.h>
 #include <camera/Camera.h>
 #include <camera/CameraParameters.h>
