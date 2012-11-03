@@ -40,7 +40,16 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/firmware/vidc_720p_h264_enc_mc.fw:system/etc/firmware/vidc_720p_h264_enc_mc.fw \
     device/htc/msm7x30-common/firmware/vidc_720p_mp4_dec_mc.fw:system/etc/firmware/vidc_720p_mp4_dec_mc.fw \
     device/htc/msm7x30-common/firmware/vidc_720p_mp4_enc_mc.fw:system/etc/firmware/vidc_720p_mp4_enc_mc.fw \
-    device/htc/msm7x30-common/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw 
+    device/htc/msm7x30-common/firmware/vidc_720p_vc1_dec_mc.fw:system/etc/firmware/vidc_720p_vc1_dec_mc.fw \
+    device/htc/msm7x30-common/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
+    device/htc/msm7x30-common/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw \
+    device/htc/msm7x30-common/firmware/leia_pfp_470.fw:system/etc/firmware/leia_pfp_470.fw \
+    device/htc/msm7x30-common/firmware/leia_pm4_470.fw:system/etc/firmware/leia_pm4_470.fw \
+    device/htc/msm7x30-common/firmware/a225p5_pm4.fw:system/etc/firmware/a225p5_pm4.fw \
+    device/htc/msm7x30-common/firmware/a225_pfp.fw:system/etc/firmware/a225_pfp.fw \
+    device/htc/msm7x30-common/firmware/a225_pm4.fw:system/etc/firmware/a225_pm4.fw \
+    device/htc/msm7x30-common/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
+    device/htc/msm7x30-common/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw
 
 # media codecs
 PRODUCT_COPY_FILES += \
@@ -62,6 +71,7 @@ PRODUCT_PACKAGE_OVERLAYS += device/htc/msm7x30-common/overlay
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.primary.msm7x30 \
+    audio_policy.msm7x30 \
     audio.usb.default \
     libaudioutils \
     libtinyalsa
@@ -125,3 +135,10 @@ PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.composition.type=gpu \
+    debug.sf.hw=1 \
+    debug.mdpcomp.maxlayer=3 \
+    debug.mdpcomp.logs=0
+
