@@ -51,22 +51,6 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/firmware/a300_pfp.fw:system/etc/firmware/a300_pfp.fw \
     device/htc/msm7x30-common/firmware/a300_pm4.fw:system/etc/firmware/a300_pm4.fw
 
-# media codecs
-PRODUCT_COPY_FILES += \
-    device/htc/msm7x30-common/media_codecs.xml:system/etc/media_codecs.xml \
-    device/htc/msm7x30-common/audio_policy.conf:system/etc/audio_policy.conf\
-    device/htc/msm7x30-common/media_profiles.xml:system/etc/media_profiles.xml
-
-# Camera
-PRODUCT_COPY_FILES += \
-    device/htc/msm7x30-common/prebuilt/libsurfaceflinger_client.so:system/lib/libsurfaceflinger_client.so \
-    device/htc/msm7x30-common/prebuilt/hostapd:system/bin/hostapd \
-    device/htc/msm7x30-common/prebuilt/hostapd_cli:system/bin/hostapd_cli
-
-PRODUCT_PACKAGE_OVERLAYS += device/htc/msm7x30-common/overlay
-
-PRODUCT_PACKAGE_OVERLAYS += device/htc/msm7x30-common/overlay
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
