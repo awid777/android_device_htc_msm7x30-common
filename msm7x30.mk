@@ -50,11 +50,6 @@ PRODUCT_COPY_FILES += \
     device/htc/msm7x30-common/media_codecs.xml:system/etc/media_codecs.xml \
     device/htc/msm7x30-common/audio_policy.conf:system/etc/audio_policy.conf
 
-# Broadcom firmware
-PRODUCT_PACKAGES += \
-    fw_bcm4329_apsta.bin \
-    fw_bcm4329.bin
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
