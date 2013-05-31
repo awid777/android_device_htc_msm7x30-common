@@ -142,3 +142,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=gpu \
     debug.sf.hw=1 \
     debug.egl.hw=1
+
